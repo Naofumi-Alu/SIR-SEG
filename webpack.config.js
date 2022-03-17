@@ -1,5 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
+const HtmlWebpackPlugin =require('html-webpack-plugin');
+const MiniCssExtractPlugin =require('mini-css-extract-plugin');
 
 module.exports={
     entry: "./src/index.js",
@@ -14,18 +16,30 @@ module.exports={
             },
             {
                 test: /\.css$/,
-                use: ["style-loader", "css-loader"]
+                use: [MiniCssExtractPlugin.loader, "css-loader"]
             },
             {
                 test:/\.s[ac]ss$/i,
                 use: [
-                    "style-loader",
+                    MiniCssExtractPlugin.loader,
                     "css-loader",
                     "sass-loader"
                 ]
             }
         ]
     },
+    plugins:[
+        new HtmlWebpackPlugin({
+            filename:"index.html",
+            template:"./src/index.html",
+            templateParameters:{
+                title: 'SIR SEG'
+            }
+        }),
+        new MiniCssExtractPlugin({
+            filename:'bundle.css'
+        })
+    ],
     resolve: {extensions: ["*", ".js", ".jsx"]},
     output: {
         path: path.resolve(__dirname, "build/"),
