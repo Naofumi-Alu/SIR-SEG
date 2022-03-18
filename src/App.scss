@@ -1,6 +1,6 @@
 
 body{
-    background: #161616;
+    background: #25282fff;
     font-family: Arial, Helvetica, sans-serif;
 }
 .App {
@@ -22,4 +22,16 @@ h1:hover{
     color: #161616;
     border-radius: 10px;
     padding: 25px;
+}
+
+.c-l-logo{
+    height: 40%;
+    width: 40%;
+    transition: all 0.5s ease ;
+}
+
+.c-l-logo:hover{
+    height: 40%;
+    width: 40%;
+
 }
