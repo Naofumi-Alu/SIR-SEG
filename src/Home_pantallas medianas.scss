@@ -1,0 +1,56 @@
+@media only screen and (min-width:1024px) and (max-width: 1600px){
+    
+
+    .c-l-Banner{
+        height: 70vh;
+        width: 100vh;
+        background-color: rgb(71, 83, 189);
+        margin-top: 2%;
+        display: flex;
+        position: absolute;
+        right: 10%;
+
+    }
+    
+    .c-u-ToggleMainNav{
+        .c-u-ToggleNav1{
+            height: 30px;
+            width: 4%;
+            border-bottom: 5px solid #ffffff;    
+            position: absolute;
+            right: 3%;
+         }
+         .c-u-ToggleNav2{
+             height: 30px;
+             width: 4%;
+             border-top: 5px solid #ffffff;    
+             position: absolute;
+             right: 3%;
+          }
+          .c-u-ToggleNav3{
+             height: 18px;
+             width: 4%;
+             border-bottom: 5px solid #ffffff;    
+             position: absolute;
+             right: 3%;
+          }
+
+          
+    }
+   
+    .c-l-logoNav{
+        position: absolute;
+        top: 15px;
+        left: 3%;
+        height: 12%;
+        width: 10%;
+        transition: all 0.5s ease ;
+        display: flex;
+        justify-content: left;
+    }
+
+    .c-u-Nav{
+        background-color: rgb(12, 14, 17);
+    }
+
+}
