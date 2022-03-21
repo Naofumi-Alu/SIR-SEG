@@ -1,16 +1,64 @@
 @media only screen and (min-width:1024px) and (max-width: 1600px){
     
-
-    .c-l-Banner{
-        height: 70vh;
-        width: 100vh;
-        background-color: rgb(71, 83, 189);
-        margin-top: 2%;
-        display: flex;
-        position: absolute;
-        right: 10%;
-
+    .Home{
+        display: grid;
+        grid-template-columns: [x0]70% [x1]30%;
+        grid-template-rows: [r1]12% [r2]80%;
     }
+
+    
+    .c-l-Banner{
+        grid-column: -x1/x0;
+        grid-row: r2;
+        width: 55%;
+        height: 75%;
+        margin-left: 38%;
+        z-index: 0;
+        position: absolute;
+        top:15%;
+        .c-l-Banner--mask{
+            background: #ffffff;
+            opacity: 0.3;
+            grid-column: -x1/x0;
+            grid-row: r2;
+            width: 96.7%;
+            height:100%;
+            margin-left: 12px;
+            position: absolute;
+            z-index: 1;
+        }
+    }
+
+    .c-l-Banner--img{
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #customNav{
+        grid-column: x0;
+        display: flex;
+        justify-content:left;
+        padding-left: 15%;
+    }
+
+    .Content1{
+        z-index: 2;
+        padding-left: 20%;
+        grid-column: x0/x1;
+        grid-row: r2;
+        .MainTitle{
+            font-size: 5rem;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .Content{
+            font-size: 1.2rem;
+            color: #ffffff;
+            width: 50%;
+        }
+        
+    }
+
     
     .c-u-ToggleMainNav{
         .c-u-ToggleNav1{
@@ -38,10 +86,11 @@
           
     }
    
+
     .c-l-logoNav{
         position: absolute;
         top: 15px;
-        left: 3%;
+        left: 0%;
         height: 12%;
         width: 10%;
         transition: all 0.5s ease ;
@@ -49,8 +98,68 @@
         justify-content: left;
     }
 
+    .c-l-logoNav:hover{
+        padding: 10px;
+    }
+
     .c-u-Nav{
-        background-color: rgb(12, 14, 17);
+        //background-color: rgb(12, 14, 17);
+        background: rgb(18, 22, 27);
+    }
+
+    
+    
+    .c-u-NavBarSliderMain{
+        padding-top: 20%;
+        grid-row: r2;
+        z-index: 3;
+        .c-u-NavBarSlider1{
+            height: 7%;
+            width: 5%;
+            border-top: 5px solid #ffffff;    
+            position: absolute;
+            left: 3%;
+            transition: all 0.5s ease ;
+        
+        }
+
+        
+        
+         .c-u-NavBarSlider2{
+             height: 8%;
+             width: 5%;
+             border-bottom: 5px solid #ffffff;    
+             position: absolute;
+             left: 3%;
+          }
+          .c-u-NavBarSlider3{
+             height: 14%;
+             width: 3%;
+             border-bottom: 5px solid #ffffff;    
+             position: absolute;
+             left: 3%;
+          }
+          .c-u-NavBarSlider4{
+            height: 20%;
+            width: 3%;
+            border-bottom: 5px solid #ffffff;    
+            position: absolute;
+            left: 3%;
+         }
+         .c-u-NavBarSlider5{
+            height: 26%;
+            width: 2%;
+            border-bottom: 5px solid #ffffff;    
+            position: absolute;
+            left: 3%;
+         }
+         .c-u-NavBarSlider6{
+            height: 32%;
+            width: 1%;
+            border-bottom: 5px solid #ffffff;    
+            position: absolute;
+            left: 3%;
+         }
     }
 
 }
