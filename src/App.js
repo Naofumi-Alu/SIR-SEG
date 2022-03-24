@@ -6,25 +6,34 @@ import {gsap} from "gsap";
 import ErrorBoundary from './ErrorBoundary';
 import LogoLoad from './LogoLoad.svg';
 import './Home_pantallas medianas.scss';
-import ImagenCapacitacion from './imagenes/CapacitacionInfraestructuraCisco.jpg';
+import HomeBanner from "./Home"
+import NuestrosProyectos from './NuestrosProyectos.js'
+
+const loadRef= React.createRef();
+const mainRef = React.createRef();
+const logoNav = React.createRef();
+var tl= gsap.timeline({repeatDelay:0});
 
 
-const Logo = React.lazy(() => import('./Logo.svg'));
-
-
-function Navigation(){
+function LoadApp(props){
     
-    const homeRef = React.createRef();
-    useEffect(() => {
-        var tl= gsap.timeline({repeatDelay:1});
-        tl.from(homeRef.current,{opacity:0, duration:1,ease:"power4.out"});
+    return(
+        <>
+        <div className="App">
+                <div className="c-container-Logo--Loading"  ref={loadRef}>
+                    <LogoLoad className="c-l-logo"/>
+                </div>
+        </div></>
+    );
+}
 
-      });
+function Navigation(props){
+
    
     return(
         <>
             <ul className='nav justify-content-end c-u-Nav'>
-                 <a href="#" ref={homeRef}>
+                 <a href="#" ref={props.name}>
                     <LogoLoad className="c-l-logoNav"/>
                 </a>
                 <a className="c-u-ToggleMainNav" href="#">
@@ -44,69 +53,39 @@ function Navigation(){
             </ul>
         </>
     );
-  }
+}
 
-  function Banner(){
-        return(
-            <>
-                <div className="Content1">
-                    <div className="MainTitle">SIRSEG <br/>Investigacion y Desarrollo</div>
-                    <div className="Content">Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</div>
-                </div>
-                <div className="c-l-Banner">
-                    <div className="c-l-Banner--mask"></div>
-                    <img className="c-l-Banner--img container-fluid" src={ImagenCapacitacion} alt="Images of banner" />
-                </div>
-            </>
-        );
-  }
 
-class NavSlider extends React.Component{
-   
-    constructor(props){
-        super(props);
-        this.state= {isToggleOn: true};
-        this.gsapState= 
-        this.onHover = this.onHover.bind(this);
+function  NavSlider (){
 
-    }
-    
-   
-
-    onHover() {
-    this.setState(prevState => ({
-                
-    }));
-    
-    }
-     render(){
-        return(
-            <div className="c-u-NavBarSliderMain" >
-                <a id="itemNavSlider" className="c-u-NavBarSlider1" href="#" onClick={this.onHover} ></a>
-                <a id="itemNavSlider" className="c-u-NavBarSlider2" href="#" onClick={this.onHover} ></a>
-                <a id="itemNavSlider" className="c-u-NavBarSlider3" href="#" onClick={this.onHover} ></a>
-                <a id="itemNavSlider" className="c-u-NavBarSlider4" href="#" onClick={this.onHover} ></a>
-                <a id="itemNavSlider" className="c-u-NavBarSlider5" href="#" onClick={this.onHover} ></a>
-                <a id="itemNavSlider" className="c-u-NavBarSlider6" href="#" onClick={this.onHover} ></a>
-        </div>
-        );
-     }
+ 
+    return(
+        <div className="c-u-NavBarSliderMain" >
+            <a id="itemNavSlider" className="c-u-NavBarSlider1" href="./Home"  ></a>
+            <a id="itemNavSlider" className="c-u-NavBarSlider2" href="#"  ></a>
+            <a id="itemNavSlider" className="c-u-NavBarSlider3" href="#"  ></a>
+            <a id="itemNavSlider" className="c-u-NavBarSlider4" href="#"  ></a>
+            <a id="itemNavSlider" className="c-u-NavBarSlider5" href="#"  ></a>
+            <a id="itemNavSlider" className="c-u-NavBarSlider6" href="#"  ></a>
+    </div>
+    );
 
     
 
    
 }
 
+//Componente principal, llama a los componentes de las demas paginas y de la actual
+
 function App (){
-    const loadRef= React.createRef();
-    const homeRef = React.createRef();
-
+    
+// metodo de montaje y desmontaje de animaciones GSAP
     useEffect(() => {
-        var tl= gsap.timeline({repeatDelay:0});
-
         tl.to(loadRef.current,{opacity:0 , duration:0.5, ease:"back.out(2.2)", delay:1.2});
 
-        tl.from(homeRef.current,{opacity:0, duration:1,ease:"power4.out"});
+        tl.from(mainRef.current,{opacity:0, duration:1,ease:"power4.out"});
+
+        tl.from(logoNav.current, {opacity:0, duration:0.25,ease:"power4.out"});
     
       });
 
@@ -114,21 +93,15 @@ function App (){
        
         <ErrorBoundary>
            
-               <div className="Home" ref={homeRef} >
+               <div className="Home" ref={mainRef} >
                     <div id='customNav'>
-                        
-                        <Navigation/>
+                        <Navigation name={logoNav}/>
                         <NavSlider/>
-                        
                     </div>
-                    <Banner/>
+                    <HomeBanner/>
                     
                </div>
-            <div className="App">
-                <div className="c-container-Logo--Loading"  ref={loadRef}>
-                    <LogoLoad className="c-l-logo"/>
-                </div>
-            </div>
+               <LoadApp/>
         </ErrorBoundary>   
        
     );
