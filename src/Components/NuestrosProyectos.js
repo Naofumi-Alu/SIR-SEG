@@ -63,7 +63,7 @@ export default function NuestrosProyectos(props){
         <div className="Home">
             <div className="Content1">
                 <div className="MainTitle">Nuestros Proyectos</div>
-                <div className="Content" style={styleMargin} >nuestros proyrctos son fuertemente centrados en la investigacion de segurida dinformtatica e infraestructura de redes para la aplicacion correspondiente en proyectos e inovaciones de l amano de sectores empresariales y entidades aliadas</div>
+                <div className="Content" style={styleMargin} >nuestros proyectos son fuertemente centrados en la investigacion de segurida dinformtatica e infraestructura de redes para la aplicacion correspondiente en proyectos e inovaciones de l amano de sectores empresariales y entidades aliadas</div>
             </div>
             <div className="c-l-Banner" ref={bannerRef}>
                 <div className="c-l-Banner--mask" style={image}></div>
@@ -74,7 +74,7 @@ export default function NuestrosProyectos(props){
         <div className="Home">
             <div className="Content1" ref={contentRef}>
                 <div className="MainTitle">Nuestros Proyectos</div>
-                <div className="Content" style={styleMargin}>nuestros proyrctos son fuertemente centrados en la investigacion de segurida dinformtatica e infraestructura de redes para la aplicacion correspondiente en proyectos e inovaciones de l amano de sectores empresariales y entidades aliadas</div>
+                <div className="Content" style={styleMargin}>nuestros proyectos son fuertemente centrados en la investigacion de segurida dinformtatica e infraestructura de redes para la aplicacion correspondiente en proyectos e inovaciones de l amano de sectores empresariales y entidades aliadas</div>
             </div>
             <div className="c-l-Banner" ref={bannerRef}>
                 <div className="c-l-Banner--mask" style={image}></div>
