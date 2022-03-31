@@ -63,7 +63,7 @@ export default function Topics(props){
         <div className="Home" >
             <div className="Content1" ref={topicsRef} >
                 <div className="MainTitle">Seguridad Desarrollo</div>
-                <div className="Content" style={styleMargin}>Grupo deinvestigacion solodidado en temas de Seguridad Informatica e Infraestructura de redes, profndizando e inovando en laS TIC para frecer a sus partners un servicio de calidad en procesos efectivos y estudios dentro de los mismos</div>
+                <div className="Content" style={styleMargin}>Grupo deinvestigacion consolidado en temas de Seguridad Informatica e Infraestructura de redes, profndizando e inovando en laS TIC para frecer a sus partners un servicio de calidad en procesos efectivos y estudios dentro de los mismos</div>
             </div>
             <div className="c-l-Banner" ref={bannerRef}>
                 <div className="c-l-Banner--mask" style={image}></div>
@@ -76,10 +76,10 @@ export default function Topics(props){
         <div className="Home" >
             <div className="Content1" ref={topicsRef}>
                 <div className="MainTitle">Seguridad Desarrollo </div>
-                <div className="Content" style={styleMargin}>Grupo deinvestigacion solodidado en temas de Seguridad Informatica e Infraestructura de redes, profndizando e inovando en laS TIC para frecer a sus partners un servicio de calidad en procesos efectivos y estudios dentro de los mismos</div>
+                <div className="Content" style={styleMargin}>Grupo deinvestigacion consolidado en temas de Seguridad Informatica e Infraestructura de redes, profndizando e inovando en laS TIC para frecer a sus partners un servicio de calidad en procesos efectivos y estudios dentro de los mismos</div>
             </div>
             <div className="c-l-Banner" ref={bannerRef}>
-                <div className="c-l-Banner--mask" style={image}git ></div>
+                <div className="c-l-Banner--mask" style={image}></div>
                 <img className="c-l-Banner--img container-fluid"   src={imageSeg} alt="Images of banner" />
             </div>
         </div>

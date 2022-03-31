@@ -27,6 +27,36 @@ body {
   transition: all 0.5s ease;
 }
 
+.ErrorBoundary {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.ErrorBoundary-h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200vh;
+  color: #a01e1e;
+  font-weight: bold;
+  height: 20%;
+  font-size: 3rem;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+
+.ErrorBoundary-h1:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  background: #ffffff;
+  border-radius: 35px;
+}
+
 div#customNav.active {
   width: 100%;
   background: #ffffff;
@@ -113,10 +143,171 @@ ul.nav li a:hover {
 .container {
   background: #d68484;
 }
+/*!****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/Home_Moviles.scss ***!
+  \****************************************************************************************************************/
+@media only screen and (min-width: 170px) and (max-width: 1024px) {
+  .Home {
+    display: grid;
+    grid-template-columns: [x0] 70% [x1] 30%;
+    grid-template-rows: [r1] 12% [r2] 80%;
+  }
+
+  .c-l-Banner {
+    grid-column: -x1/x0;
+    grid-row: r2;
+    width: 55%;
+    height: 75%;
+    margin-left: 38%;
+    z-index: 0;
+    position: absolute;
+    top: 15%;
+  }
+  .c-l-Banner .c-l-Banner--mask {
+    background: #ffffff;
+    opacity: 0.3;
+    grid-column: -x1/x0;
+    grid-row: r2;
+    width: 96.7%;
+    height: 100%;
+    margin-left: 12px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .c-l-Banner--img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #customNav {
+    grid-column: x0;
+    display: flex;
+    justify-content: left;
+    padding-left: 15%;
+  }
+
+  .Content1 {
+    z-index: 2;
+    padding-left: 12%;
+    grid-column: x0/x1;
+    grid-row: r2;
+    position: absolute;
+    top: 20%;
+  }
+  .Content1 .MainTitle {
+    font-size: 5rem;
+    color: #ffffff;
+    font-weight: bold;
+    width: 70%;
+  }
+  .Content1 .Content {
+    font-size: 1.3rem;
+    color: #C4DFFF;
+    -webkit-text-stroke: 0.2px #000000;
+    font-weight: bold;
+    text-align: left;
+    width: 35%;
+  }
+
+  .c-u-ToggleMainNav .c-u-ToggleNav1 {
+    height: 30px;
+    width: 4%;
+    border-bottom: 5px solid #ffffff;
+    position: absolute;
+    right: 3%;
+  }
+  .c-u-ToggleMainNav .c-u-ToggleNav2 {
+    height: 30px;
+    width: 4%;
+    border-top: 5px solid #ffffff;
+    position: absolute;
+    right: 3%;
+  }
+  .c-u-ToggleMainNav .c-u-ToggleNav3 {
+    height: 18px;
+    width: 4%;
+    border-bottom: 5px solid #ffffff;
+    position: absolute;
+    right: 3%;
+  }
+
+  .c-l-logoNav {
+    position: absolute;
+    top: 15px;
+    left: 0%;
+    height: 12%;
+    width: 10%;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: left;
+  }
+
+  .c-l-logoNav:hover {
+    padding: 10px;
+  }
+
+  .c-u-Nav {
+    background: #12161b;
+  }
+
+  .c-u-NavBarSliderMain {
+    grid-row: r2;
+    z-index: 3;
+  }
+  .c-u-NavBarSliderMain .c-u-NavBarSlider1 {
+    height: 1%;
+    width: 50px;
+    position: absolute;
+    top: 25%;
+    left: 3%;
+    background: #ffffff;
+  }
+  .c-u-NavBarSliderMain .c-u-NavBarSlider2 {
+    height: 1%;
+    width: 5%;
+    position: absolute;
+    top: 33%;
+    left: 3%;
+    background: #ffffff;
+  }
+  .c-u-NavBarSliderMain .c-u-NavBarSlider3 {
+    height: 1%;
+    width: 4%;
+    position: absolute;
+    top: 41%;
+    left: 3%;
+    background: #ffffff;
+  }
+  .c-u-NavBarSliderMain .c-u-NavBarSlider4 {
+    height: 1%;
+    width: 3%;
+    position: absolute;
+    top: 49%;
+    left: 3%;
+    background: #ffffff;
+  }
+  .c-u-NavBarSliderMain .c-u-NavBarSlider5 {
+    height: 1%;
+    width: 2%;
+    position: absolute;
+    top: 57%;
+    left: 3%;
+    background: #ffffff;
+  }
+  .c-u-NavBarSliderMain .c-u-NavBarSlider6 {
+    height: 1%;
+    width: 1%;
+    position: absolute;
+    top: 65%;
+    left: 3%;
+    background: #ffffff;
+  }
+}
 /*!***************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/Home_pantallas medianas.scss ***!
   \***************************************************************************************************************************/
-@media only screen and (min-width: 500px) and (max-width: 2000px) {
+@media only screen and (min-width: 1024px) and (max-width: 1600px) {
   .Home {
     display: grid;
     grid-template-columns: [x0] 70% [x1] 30%;
