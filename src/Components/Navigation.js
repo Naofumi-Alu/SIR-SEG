@@ -14,7 +14,7 @@ export default function Navigation(props){
    props.state!=0?
    useEffect(() => {
     tl.set(logoNav.current,{opacity:0 , duration:0, ease:"back.out(1.2)"});
-    tl.to(logoNav.current,{opacity:1 , duration:1, ease:"back.out(1.2)"});
+    tl.to(logoNav.current,{opacity:1 , duration:0.28, ease:"back.out(1.2)"});
     tl.from(mainNavRef.current,{opacity:0 , duration:0.5, ease:"back.out(1.2)"});
    }):
 

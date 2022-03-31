@@ -31,26 +31,61 @@ var tl= gsap.timeline({repeatDelay:0});
 */
 
 const bannerRef = React.createRef();
-var tl= gsap.timeline({repeatDelay:0});
+const contentRef = React.createRef();
+
+
+var tl= gsap.timeline({repeatDelay:1});
 
 export default function HomeBanner(props){
-    
+   
     props.state!=0?useEffect(() => {
-        tl.from(bannerRef.current,{opacity:0 , duration:0.5, ease:"back.out(1.2)"});
+        tl.fromTo(bannerRef.current, 
+            {
+                
+                duration:0,
+                scale:0.7,
+                opacity:0
+            },
+            {
+                
+                duration:1,
+                scale:1,
+                opacity:1,
+                ease:"back.out(1.2)",
+                delay:0
+            
+            });
+        tl.from(contentRef.current,{opacity:0 , duration:1, ease:"back.out(1.2)",x:100});
     }):
     useEffect(() => {
-        tl.from(bannerRef.current,{opacity:0 , duration:0.5, ease:"back.out(1.2)", delay:2});
+        tl.fromTo(bannerRef.current, 
+            {
+                
+                duration:0,
+                scale:0.7,
+                opacity:0
+            },
+            {
+                
+                duration:1,
+                scale:1,
+                opacity:1,
+                ease:"back.out(1.2)",
+                delay:1.3
+            
+            });
+        tl.from(contentRef.current,{opacity:0 , duration:1, ease:"back.out(1.2)",x:100});
     });
-    
-    
+   
+
     return props.state==0?(
         
-        <div className="Home" ref={bannerRef}>
-            <div className="Content1" >
+        <div className="Home" >
+            <div className="Content1" ref={contentRef} >
                 <div className="MainTitle">Investigacion  desarrollo </div>
-                <div className="Content">Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</div>
+                <div className="Content">Enfocados en la apropiacion de las nuevas tecnologias de las TIC con respecto a seguridad informatica y gestion de infraestructura y su efectiva aplicacion en proyectos empresariales </div>
             </div>
-            <div className="c-l-Banner">
+            <div className="c-l-Banner" ref={bannerRef}>
                 <div className="c-l-Banner--mask"></div>
                 <img className="c-l-Banner--img container-fluid" src={ImagenCapacitacion} alt="Images of banner" />
             </div>
@@ -58,12 +93,12 @@ export default function HomeBanner(props){
       
     ):
         
-        <div className="Home" ref={bannerRef}>
-            <div className="Content1" >
+        <div className="Home" >
+            <div className="Content1" ref={contentRef}>
                 <div className="MainTitle">Investigacion  desarrollo </div>
-                <div className="Content">Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</div>
+                <div className="Content">Enfocados en la apropiacion de las nuevas tecnologias de las TIC con respecto a seguridad informatica y gestion de infraestructura y su efectiva aplicacion en proyectos empresariales</div>
             </div>
-            <div className="c-l-Banner">
+            <div className="c-l-Banner"ref={bannerRef}>
                 <div className="c-l-Banner--mask"></div>
                 <img className="c-l-Banner--img container-fluid" src={ImagenCapacitacion} alt="Images of banner" />
             </div>

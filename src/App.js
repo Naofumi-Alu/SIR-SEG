@@ -4,12 +4,17 @@ import "./App.scss";
 import "./App2.scss";
 import ErrorBoundary from './ErrorBoundary';
 
+
 import './Home_pantallas medianas.scss';
 import HomeBanner from "./Components/Home"
 import NuestrosProyectos from './Components/NuestrosProyectos.js'
 import LoadApp from "./Components/LoadApp";
 import Navigation from './Components/Navigation';
 import NavSlider from './Components/NavSlider';
+import Topics from "./Components/Topics";
+import Tools from "./Components/Tools";
+import Partners from "./Components/Partners";
+import Contact from "./Components/Contact";
 
 
 
@@ -42,29 +47,52 @@ function App (){
 
 
   function toggleComponentTopics(){
-    setstate(1);
-    
+    if (state==3) {
+      setstate(state)
+    } else{
+      setstate(3);
+     
+    }
     
   }
   function toggleComponentTools(){
-    setstate(1);
+    if (state==4) {
+      setstate(state)
+    } else{
+      setstate(4);
+     
+    }
     
     
   }
   function toggleComponentPartners(){
-    setstate(1);
+    if (state==5) {
+      setstate(state)
+    } else{
+      setstate(5);
+     
+    }
     
     
   }
   function toggleComponentContact(){
-    setstate(1);
+    if (state==6) {
+      setstate(state)
+    } else{
+      setstate(6);
+     
+    }
    
   }
 
   function renderComponent(state){
     switch (state ) {
       case 1: return <HomeBanner state={state} />
-      case 2: return <NuestrosProyectos state={state}/>          
+      case 2: return <NuestrosProyectos state={state}/>
+      case 3: return <Topics  state={state}/>
+      case 4: return <Tools state={state}/>
+      case 5: return <Partners state={state}/>
+      case 6: return <Contact state={state} />        
   
       default:
         break;
@@ -76,7 +104,7 @@ function App (){
    
       console.log('Estado: ',state);
    
-      });
+      },[state]);
 
     return(
        

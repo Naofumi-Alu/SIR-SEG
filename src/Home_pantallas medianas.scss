@@ -1,3 +1,4 @@
+
 @media only screen and (min-width:1024px) and (max-width: 1600px){
     
     .Home{
@@ -7,6 +8,8 @@
     }
 
     
+    $positionGrid: -x1/x0;
+    $InversPositionGrid:not($positionGrid);
     .c-l-Banner{
         grid-column: -x1/x0;
         grid-row: r2;
@@ -43,7 +46,7 @@
 
     .Content1{
         z-index: 2;
-        padding-left: 15%;
+        padding-left: 12%;
         grid-column: x0/x1;
         grid-row: r2;
         position: absolute;
@@ -52,13 +55,38 @@
         .MainTitle{
             font-size: 5rem;
             color: #ffffff;
+            //-webkit-text-stroke: 0.5px #000000;
+            //text-shadow: 15px 20px 20px #000000;
             font-weight: bold;
             width: 70%;
         }
         .Content{
-            font-size: 1.2rem;
-            color: #ffffff;
-            width: 50%;
+            font-size: 1.3rem;
+            //474747 gris
+            //3519af azul
+
+            // Estos de abajo se ven mejores que los de arriba
+            //DEC495 se ve mejor este, me gusta
+            //95B6DE este azul se ve bien
+            //C4DFFF este azul claro pastel tambien
+            //DEAFAB rosa pastel, este me gusto
+
+            //95B6DE azul complementario dividido
+            //8AAFDE
+
+
+            //este queda C4DFFF
+            //o este 95B6DE
+            //8AAFDE
+            //A0BCDE
+            //95DCDE
+            //3F4D5Emuy oscuro pero funcionaria
+            //text-shadow: 0 0 2px #000000;
+            color: #C4DFFF;
+            -webkit-text-stroke: 0.2px #000000;
+            font-weight: bold;
+            text-align: left;
+            width: 35%;
         }
         
     }
