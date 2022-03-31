@@ -2,6 +2,7 @@ import React, {Component, useEffect, useState, Suspense,lazy,} from "react";
 import {hot} from "react-hot-loader";
 import "./App.scss";
 import "./App2.scss";
+import "./Home_Moviles.scss";
 import ErrorBoundary from './ErrorBoundary';
 
 
@@ -21,6 +22,7 @@ import Contact from "./Components/Contact";
 //Componente principal, llama a los componentes de las demas paginas y de la actual
 
 function App (){
+  
   const [state, setstate] = useState(0);
 
   function toggleComponentHome(){
@@ -28,9 +30,7 @@ function App (){
       setstate(state)
     } else{
       setstate(1);
-     
     }
-    
   }
 
   function toggleComponentProyect(){
@@ -92,7 +92,7 @@ function App (){
       case 3: return <Topics  state={state}/>
       case 4: return <Tools state={state}/>
       case 5: return <Partners state={state}/>
-      case 6: return <Contact state={state} />        
+      case 6:  return <Contact state={state} />        
   
       default:
         break;
@@ -101,7 +101,6 @@ function App (){
   }
 // metodo de montaje y desmontaje de animaciones GSAP
     useEffect(() => {
-   
       console.log('Estado: ',state);
    
       },[state]);

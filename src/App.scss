@@ -24,7 +24,37 @@ body{
 }
 
 
+.ErrorBoundary{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
 
+
+
+.ErrorBoundary-h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200vh;
+  color:#a01e1e ;
+  font-weight: bold;
+  height: 20%;
+  font-size: 3rem;
+  transition: all 0.5s  ease;
+  text-decoration: none;
+}
+
+.ErrorBoundary-h1:hover{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  background: #ffffff;
+  border-radius: 35px;
+}
 
 
   div#customNav.active{

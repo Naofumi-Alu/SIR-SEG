@@ -1,13 +1,20 @@
 import React,{useEffect,Component} from 'react';
 import gsap from 'gsap';
-
-
+import imageSeg from '../imagenes/SeguridadInformatica.png';
 
 
 const topicsRef = React.createRef();
 const bannerRef = React.createRef();
 const prevRef = React.createRef();
 var tl= gsap.timeline({repeatDelay:0});
+
+const styleMargin = {
+    marginTop:"5%"
+  };
+
+  const image={
+    opacity:0.2
+}
 
 export default function Topics(props){
     
@@ -55,12 +62,12 @@ export default function Topics(props){
         
         <div className="Home" >
             <div className="Content1" ref={topicsRef} >
-                <div className="MainTitle">Seguridad y Desarrollo</div>
-                <div className="Content">Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</div>
+                <div className="MainTitle">Seguridad Desarrollo</div>
+                <div className="Content" style={styleMargin}>Grupo deinvestigacion solodidado en temas de Seguridad Informatica e Infraestructura de redes, profndizando e inovando en laS TIC para frecer a sus partners un servicio de calidad en procesos efectivos y estudios dentro de los mismos</div>
             </div>
             <div className="c-l-Banner" ref={bannerRef}>
-                <div className="c-l-Banner--mask"></div>
-                <img className="c-l-Banner--img container-fluid"  alt="Images of banner" />
+                <div className="c-l-Banner--mask" style={image}></div>
+                <img className="c-l-Banner--img container-fluid" src={imageSeg} alt="Images of banner" />
             </div>
         </div>
       
@@ -68,12 +75,12 @@ export default function Topics(props){
         
         <div className="Home" >
             <div className="Content1" ref={topicsRef}>
-                <div className="MainTitle">Seguridad y Desarrollo </div>
-                <div className="Content">Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</div>
+                <div className="MainTitle">Seguridad Desarrollo </div>
+                <div className="Content" style={styleMargin}>Grupo deinvestigacion solodidado en temas de Seguridad Informatica e Infraestructura de redes, profndizando e inovando en laS TIC para frecer a sus partners un servicio de calidad en procesos efectivos y estudios dentro de los mismos</div>
             </div>
             <div className="c-l-Banner" ref={bannerRef}>
-                <div className="c-l-Banner--mask"></div>
-                <img className="c-l-Banner--img container-fluid"  alt="Images of banner" />
+                <div className="c-l-Banner--mask" style={image}git ></div>
+                <img className="c-l-Banner--img container-fluid"   src={imageSeg} alt="Images of banner" />
             </div>
         </div>
   }
