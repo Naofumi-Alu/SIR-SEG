@@ -159,7 +159,7 @@ ul.nav li a:hover {
 
   .Content1 {
     z-index: 2;
-    padding-left: 15%;
+    padding-left: 12%;
     grid-column: x0/x1;
     grid-row: r2;
     position: absolute;
@@ -172,9 +172,12 @@ ul.nav li a:hover {
     width: 70%;
   }
   .Content1 .Content {
-    font-size: 1.2rem;
-    color: #ffffff;
-    width: 50%;
+    font-size: 1.3rem;
+    color: #C4DFFF;
+    -webkit-text-stroke: 0.2px #000000;
+    font-weight: bold;
+    text-align: left;
+    width: 35%;
   }
 
   .c-u-ToggleMainNav .c-u-ToggleNav1 {
