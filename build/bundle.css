@@ -100,7 +100,7 @@ ul.nav li a:hover {
   border-radius: 15px;
 }
 
-.App {
+.c-l-Logo-App {
   text-align: center;
 }
 
@@ -366,7 +366,7 @@ ul.nav li a:hover {
     font-size: 1.3rem;
     color: #C4DFFF;
     -webkit-text-stroke: 0.2px #000000;
-    font-weight: bold;
+    font-weight: 600;
     text-align: left;
     width: 35%;
   }
