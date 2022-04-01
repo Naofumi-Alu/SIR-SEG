@@ -4,7 +4,7 @@ import "./App.scss";
 import "./App2.scss";
 import "./Home_Moviles.scss";
 import ErrorBoundary from './ErrorBoundary';
-
+import LogoLoad from './LogoLoad.svg';
 
 import './Home_pantallas medianas.scss';
 import HomeBanner from "./Components/Home"
@@ -16,6 +16,7 @@ import Topics from "./Components/Topics";
 import Tools from "./Components/Tools";
 import Partners from "./Components/Partners";
 import Contact from "./Components/Contact";
+
 
 
 
@@ -55,6 +56,7 @@ function App (){
     }
     
   }
+
   function toggleComponentTools(){
     if (state==4) {
       setstate(state)
@@ -65,6 +67,7 @@ function App (){
     
     
   }
+
   function toggleComponentPartners(){
     if (state==5) {
       setstate(state)
@@ -75,6 +78,7 @@ function App (){
     
     
   }
+
   function toggleComponentContact(){
     if (state==6) {
       setstate(state)
@@ -99,6 +103,7 @@ function App (){
     }
   
   }
+
 // metodo de montaje y desmontaje de animaciones GSAP
     useEffect(() => {
       console.log('Estado: ',state);
@@ -110,7 +115,7 @@ function App (){
         <ErrorBoundary>
               
                <div className="HomeDiv" >
-                     <div id='customNav'>
+                    <div id='customNav'>
                         <Navigation  state={state} />
                         <NavSlider state={state}
                         toggleComponentHome={toggleComponentHome}
@@ -122,7 +127,7 @@ function App (){
                     </div>
                     {state==0&&<HomeBanner state={state}/>}
                     {renderComponent(state)}   
-                    <LoadApp state={state}/>
+                    <LoadApp img={LogoLoad} state={state}/>
                </div>
                
         </ErrorBoundary>   

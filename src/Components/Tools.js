@@ -1,5 +1,6 @@
 import React,{useEffect,Component} from 'react';
 import gsap from 'gsap';
+import Capacitacion from '../imagenes/Capacitacion.jpg'
 
 
 
@@ -53,12 +54,12 @@ export default function Tools(props){
         
         <div className="Home">
             <div className="Content1" ref={toolsRef}>
-                <div className="MainTitle">Seguridad y Desarrollo</div>
-                <div className="Content">Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</div>
+                <div className="MainTitle">Herramientas y Gestion</div>
+                <div className="Content">Sistema operativo Kali Liux como entorno de pruebas.investigacion de las Tic de acuerdo a ethical Hacking e instrumentos y dispositivos de infraestructura como Routers Swuiches, modems, y hsots</div>
             </div>
             <div className="c-l-Banner"  ref={bannerRef}>
                 <div className="c-l-Banner--mask"></div>
-                <img className="c-l-Banner--img container-fluid"  alt="Images of banner" />
+                <img className="c-l-Banner--img container-fluid" src={Capacitacion} alt="Images of banner" />
             </div>
         </div>
       
@@ -67,11 +68,11 @@ export default function Tools(props){
         <div className="Home">
             <div className="Content1"  ref={toolsRef}>
                 <div className="MainTitle">Herramientas y Gestion </div>
-                <div className="Content">Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</div>
+                <div className="Content">Sistema operativo Kali Liux como entorno de pruebas.investigacion de las Tic de acuerdo a ethical Hacking e instrumentos y dispositivos de infraestructura como Routers Swuiches, modems, y hsots</div>
             </div>
             <div className="c-l-Banner" ref={bannerRef}>
                 <div className="c-l-Banner--mask"></div>
-                <img className="c-l-Banner--img container-fluid"  alt="Images of banner" />
+                <img className="c-l-Banner--img container-fluid" src={Capacitacion} alt="Images of banner" />
             </div>
         </div>
   }

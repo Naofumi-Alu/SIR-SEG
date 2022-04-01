@@ -1,6 +1,9 @@
 import React,{useEffect,Component} from 'react';
 import gsap from 'gsap';
+import LoadApp from './LoadApp';
+import logoReact from '../logoReact.svg';
 
+//import image logoReact.svg and then  the Contact component render this image
 
 const bannerRef = React.createRef();
 const contactRef = React.createRef();
@@ -18,7 +21,7 @@ export default function Contact(props){
             },
             {
                 
-                duration:1,
+                duration:0,
                 scale:1,
                 opacity:1,
                 ease:"back.out(1.2)",
@@ -58,7 +61,7 @@ export default function Contact(props){
             </div>
             <div className="c-l-Banner" ref={bannerRef}>
                 <div className="c-l-Banner--mask"></div>
-                <img className="c-l-Banner--img container-fluid"  alt="Images of banner" />
+                <LoadApp className="App-logo" style={CLstyleContact} img={logoReact} />
             </div>
         </div>
       
@@ -71,7 +74,11 @@ export default function Contact(props){
             </div>
             <div className="c-l-Banner"  ref={bannerRef}>
                 <div className="c-l-Banner--mask"></div>
-                <img className="c-l-Banner--img container-fluid"  alt="Images of banner" />
+                <LoadApp  className="App-logo" style={CLstyleContact} img={logoReact} />
             </div>
         </div>
+  }
+
+  const CLstyleContact = {
+      
   }

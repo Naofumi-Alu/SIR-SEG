@@ -1,5 +1,4 @@
 import React, {Component, useEffect, useState, Suspense,lazy,} from "react";
-import LogoLoad from '../LogoLoad.svg';
 import {gsap} from "gsap";
 
 
@@ -10,9 +9,11 @@ var tl= gsap.timeline({repeatDelay:0});
 
 export default function LoadApp(props){
     
-    props.state!=0?
+    props.state==6?
     useEffect(() => {
-        tl.to(loadRef.current,{opacity:0 , duration:0.5, ease:"back.out(1.2)"});
+        tl.fromTo(loadRef.current,{opacity:1,y:500,rotation:360},{y:-60, rotation:0});
+        //tl.fromTo(loadRef.current,{opacity:1,rotation:360},{ rotation:0});
+        
     }):
     useEffect(() => {
         tl.to(loadRef.current,{opacity:0 , duration:0.5, ease:"back.out(1.2)", delay:1});
@@ -20,9 +21,9 @@ export default function LoadApp(props){
 
     return (
         <>
-        <div className="App">
+        <div className="c-l-Logo-App">
                 <div className="c-container-Logo--Loading"  ref={loadRef}>
-                    <LogoLoad className="c-l-logo"/>
+                    <props.img ref={loadRef} className="c-l-logo"/>
                 </div>
         </div></>
     );

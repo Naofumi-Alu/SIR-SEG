@@ -3,13 +3,12 @@
     
     .Home{
         display: grid;
-        grid-template-columns: [x0]70% [x1]30%;
-        grid-template-rows: [r1]12% [r2]80%;
+        grid-template-columns: [x0] 70% [x1] 30%;
+        grid-template-rows: [r1] 12% [r2] 80%;
     }
 
     
-    $positionGrid: -x1/x0;
-    $InversPositionGrid:not($positionGrid);
+  
     .c-l-Banner{
         grid-column: -x1/x0;
         grid-row: r2;
@@ -84,7 +83,7 @@
             //text-shadow: 0 0 2px #000000;
             color: #C4DFFF;
             -webkit-text-stroke: 0.2px #000000;
-            font-weight: bold;
+            font-weight: 600;
             text-align: left;
             width: 35%;
         }

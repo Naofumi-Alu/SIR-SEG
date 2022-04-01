@@ -1,6 +1,6 @@
 import React,{useEffect,Component} from 'react';
 import gsap from 'gsap';
-
+import CiberSecurity from '../imagenes/CiberSecurity.webp';
 
 
 const partnersRef = React.createRef();
@@ -27,6 +27,7 @@ export default function Partners(props){
             
             });
         tl.from(partnersRef.current,{opacity:0 , duration:1, ease:"back.out(1.2)",x:100});
+        
     }):
     useEffect(() => {
         tl.fromTo(bannerRef.current, 
@@ -54,11 +55,11 @@ export default function Partners(props){
         <div className="Home" >
             <div className="Content1" ref={partnersRef}>
                 <div className="MainTitle">Convenios</div>
-                <div className="Content">Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</div>
+                <div className="Content">Elgrupo de investigacion SIR-SEG cuenta con socios universitarios como la Universidad de Cundinamarca, donde se comparte conocimiento, capacitaciones con el fin crecer ingegramente y formar una comunidad de investigacion robusta y liderada para cumplir con los objetivos establecidos</div>
             </div>
             <div className="c-l-Banner"  ref={bannerRef}>
                 <div className="c-l-Banner--mask"></div>
-                <img className="c-l-Banner--img container-fluid"  alt="Images of banner" />
+                <img src={CiberSecurity} className="c-l-Banner--img container-fluid"  alt="Images of banner" />
             </div>
         </div>
       
@@ -66,12 +67,12 @@ export default function Partners(props){
         
         <div className="Home">
             <div className="Content1"  ref={partnersRef}>
-                <div className="MainTitle">Seguridad y Desarrollo </div>
-                <div className="Content">Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</div>
+                <div className="MainTitle">Convenios </div>
+                <div className="Content">Elgrupo de investigacion SIR-SEG cuenta con socios universitarios como la Universidad de Cundinamarca, donde se comparte conocimiento, capacitaciones con el fin crecer ingegramente y formar una comunidad de investigacion robusta y liderada para cumplir con los objetivos establecidos</div>
             </div>
             <div className="c-l-Banner"  ref={bannerRef}>
                 <div className="c-l-Banner--mask"></div>
-                <img className="c-l-Banner--img container-fluid"  alt="Images of banner" />
+                <img src={CiberSecurity} className="c-l-Banner--img container-fluid"  alt="Images of banner" />
             </div>
         </div>
   }
