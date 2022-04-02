@@ -1,12 +1,21 @@
+
+//React an Hot module Loader
 import React, {Component, useEffect, useState, Suspense,lazy,} from "react";
 import {hot} from "react-hot-loader";
+
+
+// Archivos Scss
 import "./App.scss";
 import "./App2.scss";
 import "./Home_Moviles.scss";
-import ErrorBoundary from './ErrorBoundary';
+import './Home_pantallas medianas.scss';
+
+
+//Imagenes de la App
 import LogoLoad from './LogoLoad.svg';
 
-import './Home_pantallas medianas.scss';
+// Compoenetes de la App
+import ErrorBoundary from './ErrorBoundary';
 import HomeBanner from "./Components/Home"
 import NuestrosProyectos from './Components/NuestrosProyectos.js'
 import LoadApp from "./Components/LoadApp";
@@ -24,8 +33,10 @@ import Contact from "./Components/Contact";
 
 function App (){
   
+  //Estados de Componentes
   const [state, setstate] = useState(0);
 
+  //Funciones que cambian el estado del componente principal
   function toggleComponentHome(){
     if (state==0) {
       setstate(state)
@@ -89,6 +100,8 @@ function App (){
    
   }
 
+// Funciones que cambian el estado del componente principal
+//para decidir que componente mostrar
   function renderComponent(state){
     switch (state ) {
       case 1: return <HomeBanner state={state} />
@@ -110,13 +123,18 @@ function App (){
    
       },[state]);
 
+// Renderizado de la App
     return(
        
         <ErrorBoundary>
               
                <div className="HomeDiv" >
+                   
+                        <Navigation  state={state}
+                          toggleComponentHome={toggleComponentHome}
+                          toggleComponentProyect={toggleComponentProyect}
+                        />
                     <div id='customNav'>
-                        <Navigation  state={state} />
                         <NavSlider state={state}
                         toggleComponentHome={toggleComponentHome}
                         toggleComponentProyect={toggleComponentProyect}
