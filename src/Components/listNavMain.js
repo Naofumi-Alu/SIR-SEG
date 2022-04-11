@@ -32,7 +32,7 @@ const [state, setstate] = useState(true);
     useEffect(() => {
        //Estado del Componente padre que muestra o oculta la lista de navegacion
        state==false&&
-       tl.to(navList.current,{opacity:1 , duration:1,x:0, ease:"back.out(1.2)"});
+       tl.to(navList.current,{zIndex:0,opacity:1 , duration:1,x:0, ease:"back.out(1.2)"});
 
       return () => {
          tl.kill();
