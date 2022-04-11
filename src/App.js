@@ -27,8 +27,6 @@ import Partners from "./Components/Partners";
 import Contact from "./Components/Contact";
 
 
-
-
 //Componente principal, llama a los componentes de las demas paginas y de la actual
 
 function App (){
@@ -97,8 +95,10 @@ function App (){
       setstate(6);
      
     }
-   
   }
+    
+  
+  
 
 // Funciones que cambian el estado del componente principal
 //para decidir que componente mostrar
@@ -152,8 +152,8 @@ function App (){
        
     );
 
+  
+
 }
-
-
 
 export default hot (module) (App);

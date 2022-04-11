@@ -3,10 +3,10 @@ import React, {Component, useEffect, useState, Suspense,lazy,} from "react";
 //request data of https://www.ecci.edu.co/ an render this data in the component
 import {request} from "graphql-request";
 import {graphqlOperation} from "aws-amplify";
-import {listProyectos} from "../graphql/queries";
-import {onCreateProyecto} from "../graphql/subscriptions";
+import {ListProyects} from "./graphql/queries";
+import {onCreateProyecto} from "./graphql/subscriptions";
 
-function fetchData () {
+export default function fetchData () {
   const [proyectos, setProyectos] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -16,7 +16,7 @@ function fetchData () {
       try {
         const proyectos = await request(
           "https://www.ecci.edu.co/",
-          listProyectos
+          ListProyects
         );
         setProyectos(proyectos.items);
         setLoading(false);
@@ -27,7 +27,7 @@ function fetchData () {
     };
     fetchData();
   }, []);
-
+/*
   useEffect(() => {
     const subscription = request(
       "https://www.ecci.edu.co/",
@@ -49,5 +49,6 @@ function fetchData () {
         </li>
       ))}
     </ul>
-  );
+  );*/
+
 }

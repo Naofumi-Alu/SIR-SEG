@@ -14,7 +14,6 @@ var tl= gsap.timeline({repeatDelay:0});
 export default function Navigation(props){
 
   
-
    props.state!=0?
    useEffect(() => {
     tl.set(logoNav.current,{opacity:0 , duration:0, ease:"back.out(1.2)"});
@@ -27,27 +26,26 @@ export default function Navigation(props){
     tl.from(navRef.current,{opacity:0 , duration:0.5, ease:"back.out(1.2)", delay:1});
    });
 
-  
-   
-  
-   
+
+
     return props.state==0?(
         <>
-            <a href="#" ref={logoNav}>
-                    <LogoLoad className="c-l-logoNav"/>
+            <a href="#home" onClick={props.toggleComponentHome} ref={logoNav}>
+                    <LogoLoad  className="c-l-logoNav"/>
             </a>
             <div ref={navRef}>
                 <ListNavMain
                     stateList={props.state}
                     toggleComponentHomeListNav={props.toggleComponentHome}
                     toggleComponentProyectListNav={props.toggleComponentProyect} 
+                    
                 />
             </div>
             
         </>
     ):
        <>
-            <a href="#" >
+            <a  href="#home" onClick={props.toggleComponentHome} >
                     <LogoLoad className="c-l-logoNav"/>
             </a>
             <div ref={navRef}>
@@ -55,8 +53,12 @@ export default function Navigation(props){
               stateList={props.state}
               toggleComponentHomeListNav={props.toggleComponentHome}
               toggleComponentProyectListNav={props.toggleComponentProyect}
+              
               />
             </div>
             
         </>
+   
+  
+   
 }
