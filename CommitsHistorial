@@ -1,58 +1,175 @@
-[33mcommit 09d9d3d33d6126371f983efe2824369b2f268a9a[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+[esc] commit afa7718250aaf76d30eeeebfd3f04ebef8ee1a06 (HEAD -> master)
+Author: Alu-Naofumi <joseabrahammaciastorres@gmail.com>
+Date:   Mon Apr 11 22:01:12 2022 -0500
+
+    SIR-SEG V1.4.11  || Se agrego el componente ChatComponent y un index2 para correr el componnte del chatbot (solo la parte visual)|| se agregaron estilo al archivo App2.scss para el chatbot Component|| se agrego funcionalidad usando gsap para jugar con la opacidad y el tamaño de la ilustracion del chatbot || se configuro los scripts en el archivo package.json || Se añadio archivo README.MD para explicar la configuracion y arquitectura del proyecto || Bulding ||  ----- Trabajando en el aspecto estetico de la  lista menu de navegacion principal  ala ctivarse el boton hamburguesa -----  11/04/2022  11/04/2022
+
+[esc] commit 33baedf2185a3f8c9b09a842617bb1b54aeb8032
+Author: Alu-Naofumi <joseabrahammaciastorres@gmail.com>
+Date:   Mon Apr 11 21:59:17 2022 -0500
+
+    SIR-SEG V1.4.11  || Se agrego el componente ChatComponent y un index2 para correr el componnte del chatbot (solo la parte visual)|| se agregaron estilo al archivo App2.scss para el chatbot Component|| se agrego funcionalidad usando gsap para jugar con la opacidad y el tamaño de la ilustracion del chatbot || se configuro los scripts en el archivo package.json || Se añadio archivo README.MD para explicar la configuracion y arquitectura del proyecto || ----- Trabajando en el aspecto estetico de la  lista menu de navegacion principal
+ ala ctivarse el boton hamburguesa -----  11/04/2022  11/04/2022
+
+[esc] commit f4ac9f847407d72dc5101a715d0105fdb8f26368
+Author: Alu-Naofumi <joseabrahammaciastorres@gmail.com>
+Date:   Sun Apr 10 23:05:40 2022 -0500
+
+    SIR-SEG V1.4.10  En ves de usar API REST, se coloco directamente el link de la Universidad ecci en el atributo Href del componente listNavMain || setrabajo en el atchivo Home_Movile-scss para la vista en telefonos , estilo responsive || Se mejoro la interactivdad de la barra de navegacion trabajando en el componenten l
+istNavMain para ocultar  y mostrar la lista al darle click en el boton hamburguesa || se organizo el codigo
+--- trabajando ahora en la lista de menu al ser mostrada y en las vistas de cada componente a nivel detallado ||Corrigiendo capa de altura Z-index del componente listNavMain En cada estado diferente ||Building-2 . .
+.||  ---- 10/04/2022  22:57 Pm
+
+[esc] commit 5472baeacf2765f6c662692b5c75f5e5d6a555a5
+Author: Alu-Naofumi <joseabrahammaciastorres@gmail.com>
+Date:   Sun Apr 10 23:04:54 2022 -0500
+
+    SIR-SEG V1.4.10  En ves de usar API REST, se coloco directamente el link de la Universidad ecci en el atributo Href del componente listNavMain || setrabajo en el atchivo Home_Movile-scss para la vista en telefonos , estilo responsive || Se mejoro la interactivdad de la barra de navegacion trabajando en el componenten listNavMain para ocultar  y mostrar la lista al darle click en el boton hamburguesa || se organizo el codigo
+--- trabajando ahora en la lista de menu al ser mostrada y en las vistas de cada componente a nivel detallado ||Corrigiendo capa de altura Z-index del componente listNavMain En cada estado diferente ||Building . . .||  ---- 10/04/2022  22:57 Pm
+
+[esc] commit 970be22730a43b3b1b110fd053d8b20bab452cf6
+Author: Alu-Naofumi <joseabrahammaciastorres@gmail.com>
+Date:   Sun Apr 10 23:00:32 2022 -0500
+
+    SIR-SEG V1.4.10  En ves de usar API REST, se coloco directamente el link de la Universidad ecci en el atributo Href del componente listNavMain || setrabajo en el atchivo Home_Movile-scss para la vista en telefonos , estilo responsive || Se mejoro la interactivdad de la barra de navegacion trabajando en el componenten listNavMain para ocultar  y mostrar la lista al darle click en el boton hamburguesa || se organizo el codigo
+--- trabajando ahora en la lista de menu al ser mostrada y en las vistas de cada componente a nivel detallado ||Building . . .||  ---- 10/04/2022  22:57 Pm
+
+[esc] commit 717c9a934fc738d562073bf02b17fa394fee81e3
+Author: Alu-Naofumi <joseabrahammaciastorres@gmail.com>
+Date:   Sun Apr 10 22:57:09 2022 -0500
+
+    SIR-SEG V1.4.10  En ves de usar API REST, se coloco directamente el link de la Universidad ecci en el atributo Href del componente listNavMain || setrabajo en el atchivo Home_Movile-scss para la vista en telefono
+s , estilo responsive || Se mejoro la interactivdad de la barra de navegacion trabajando en el componenten l
+istNavMain para ocultar  y mostrar la lista al darle click en el boton hamburguesa || se organizo el codigo
+--- trabajando ahora en la lista de menu al ser mostrada y en las vistas de cada componente a nivel detallado  ---- 10/04/2022  22:57 Pm
+
+[esc] commit bac6ae81f27e45b984b353fc533a51521796bed4
+Author: Alu-Naofumi <joseabrahammaciastorres@gmail.com>
+Date:   Sat Apr 2 10:30:15 2022 -0500
+
+    SIR-SEG V1.4.9 | Se dividio  el componente Navigation en un sub Componente llamado listNavMain que conti
+ene la lista de la navegacion principal, igualmente la logica de navegacion del NavSlider component se copio al compnente Navitaion para que lo use su hijo listNavMain| se completo las demas vistas de navegacion osea los componentes, se añadio interactividad al Componente de navegaicon principal|  Trabajando en rutas API REST para direccionar a la pagina de la universidad|BUILDING|-----  01-04-2022 10:28 am
+
+[esc] commit 1132096ddf1dd9018e4ec932b946910e78749771
+Author: Alu-Naofumi <joseabrahammaciastorres@gmail.com>
+Date:   Sat Apr 2 10:28:38 2022 -0500
+
+    SIR-SEG V1.4.9 | Se dividio  el componente Navigation en un sub Componente llamado listNavMain que conti
+ene la lista de la navegacion principal, igualmente la logica de navegacion del NavSlider component se copio al compnente Navitaion para que lo use su hijo listNavMain| se completo las demas vistas de navegacion osea los componentes, se añadio interactividad al Componente de navegaicon principal|  Trabajando en rutas API R
+EST para direccionar a la pagina de la universidad  01-04-2022 10:28 am
+
+[esc] commit 20f73cdf34949635b5484b43542f6a5d15454f86
+Author: Alu-Naofumi <joseabrahammaciastorres@gmail.com>
+Date:   Fri Apr 1 11:28:55 2022 -0500
+
+    SIR-SEG V1.4.8 |Se Instalo Plugin Copilot para mejorar  automatizacion del proceso de codificacion | se
+completaron todos los componentes al menos con imagenes de prueba, seran cambiados despues por las imagenes
+oficiales de la pagina| se agrego al archivo webpack la configuracion de archivos.webp al loader FileLoader
+| En el compoente Principal App se importa las imagenes que se usan como en el caso del componente LoadApp DONDE SE ELIMINO, pues desde el Componente App se carga dicha imagen al componente LoadApp mediante sus propiedades y se carga al componente LoadAp, se agregaron imagenes CiberSecurity, VirusAtack en la carpeta Imagen
+es y Se agrego la imagen Vectorizada LogoReact.svg a la raiz de Src, SE CARGO DICHA IMAGEN AL COMPONENTE CONTACT| Bulding project ...------Trabajando ahora en utilidades de componentes como el carrusel de cada  banner o abrir otra pagina al hacer click en un banner------EN PROGRESO    01/04/2022  11:28 PM
+
+[esc] commit 6fd2cd26809e53906dfde8588f6312eac268a41f
+Author: Alu-Naofumi <joseabrahammaciastorres@gmail.com>
+Date:   Fri Apr 1 11:27:15 2022 -0500
+
+    SIR-SEG V1.4.8 |Se Instalo Plugin Copilot para mejorar  automatizacion del proceso de codificacion | se
+completaron todos los componentes al menos con imagenes de prueba, seran cambiados despues por las imagenes
+oficiales de la pagina| se agrego al archivo webpack la configuracion de archivos.webp al loader FileLoader
+| En el compoente Principal App se importa las imagenes que se usan como en el caso del componente LoadApp DONDE SE ELIMINO, pues desde el Componente App se carga dicha imagen al componente LoadApp mediante sus propiedades y se carga al componente LoadAp, se agregaron imagenes CiberSecurity, VirusAtack en la carpeta Imagenes y Se agrego la imagen Vectorizada LogoReact.svg a la raiz de Src, SE CARGO DICHA IMAGEN AL COMPONENTE CONTACT...------Trabajando ahora en utilidades de componentes como el carrusel de cada  banner o abrir otra pagina al hacer click en un banner------EN PROGRESO    01/04/2022  11:25 PM
+
+[esc] commit 5ac8f22899d8adf16688d7879cd1b7580a39a017
+Author: Alu-Naofumi <joseabrahammaciastorres@gmail.com>
+Date:   Thu Mar 31 13:22:08 2022 -0500
+
+    SIR-SEG V1.4.7 |Corrigiendo [esc] Commit|REBUILDING ADVANCEDS | REPARANDO COMPONENTE ERRORBoundary.js , Funciona correctamente renderizando una salida si algo anda mal | Se añadio imagen para la seccion de Seguridad y
+Desarrollo osea al componente Tocios.Js| se agrego clases para ERRORBoundary.js en App.scss| trabajando en terminar cada compoenten con su respectiva imagen   31/03/2022  13:14 PM
+
+[esc] commit 01e9b0ea668099c2c5e28d7416bcb5b99775534a
+Author: Alu-Naofumi <joseabrahammaciastorres@gmail.com>
+Date:   Thu Mar 31 13:20:54 2022 -0500
+
+    SIR-SEG V1.4.7 |Corrigiendo [esc] Commit|BUILDING ADVANCEDS | REPARANDO COMPONENTE ERRORBoundary.js , Funciona correctamente renderizando una salida si algo anda mal | Se añadio imagen para la seccion de Seguridad y Desarrollo osea al componente Tocios.Js| se agrego clases para ERRORBoundary.js en App.scss| trabajando en terminar cada compoenten con su respectiva imagen   31/03/2022  13:14 PM
+
+[esc] commit 9e26d51f3ffdf89baa0582e30d0d4e528d54e22d
+Author: Alu-Naofumi <joseabrahammaciastorres@gmail.com>
+Date:   Thu Mar 31 13:14:05 2022 -0500
+
+    SIR-SEG V1.4.7 BUILDING ADVANCEDS | REPARANDO COMPONENTE ERRORBoundary.js , Funciona correctamente renderizando una salida si algo anda mal | Se añadio imagen para la seccion de Seguridad y Desarrollo osea al com
+ponente Tocios.Js| se agrego clases para ERRORBoundary.js en App.scss| trabajando en terminar cada compoenten con su respectiva imagen   31/03/2022  13:14 PM
+
+[esc] commit c81560f2ebc32f889cb28e3dc672fff604dfd252
+Author: Alu-Naofumi <joseabrahammaciastorres@gmail.com>
+Date:   Wed Mar 30 22:34:01 2022 -0500
+
+    SIR-SEG V1.4.6  BUILDING CORRECTIONS
+
+[esc] commit 9c9184c02176404cb19b2b08519fcb8174aa9b1b
+Author: Alu-Naofumi <joseabrahammaciastorres@gmail.com>
+Date:   Wed Mar 30 22:31:07 2022 -0500
+
+    SIR-SEG V1.4.5  CORRIGIENDO RESOLUCION | AGREGANDO FAVICON
+
+[esc] commit dbb3fa23037b7c878fc84c650b89c907aa8c910d
+Author: Alu-Naofumi <joseabrahammaciastorres@gmail.com>
+Date:   Wed Mar 30 22:15:46 2022 -0500
+
+    SIR-SEG V1.4.1 BUILDING|SUBIENDO AL REPOSITORIO DE DESARROLLO 30/03/2022 22:35 PM
+
+[esc] commit 09d9d3d33d6126371f983efe2824369b2f268a9a
 Author: Alu-Naofumi <joseabrahammaciastorres@gmail.com>
 Date:   Wed Mar 30 20:18:12 2022 -0500
 
     SIR-SEG V1.4.3  |ANIMACIONES PARA COMPONENTES HECHAS| SE CREO CARPETA COMPONENTS UTILITIES, PARA LAS UTILIDADES O FUNCIONES QUE USARAN COMPONENTES|FALTA FAVICON, EN PROCESO  30/03/2022 20:17 PM
 
-[33mcommit 8f414f4bf71d48b65d00833dd4c37855deecb323[m
+[esc] commit 8f414f4bf71d48b65d00833dd4c37855deecb323
 Author: Alu-Naofumi <joseabrahammaciastorres@gmail.com>
 Date:   Sat Mar 26 22:13:02 2022 -0500
 
     SIR-SEG V1.4.2 |MODULACION O DIVISION DE COMPONENTES EN ARCHIVOS SEPARADOS| CREACION DE CARPETA COMPONENTS| ORGANIZACION DE ANIMACIONES POR COMPONENTE INDIVIDUAL| SE AÑADIO IMAGEN FAVICON.ICO| INTENTANDO QUE EL FAVICON SE VISUALIZE EN EL  PROYECTO EN EL NAVEGADOR| EN PROCESO DE FAVICON Y PROCESO DE PERSONALIZAR ANIMACIONES
 
-[33mcommit 633dd8136ff9a82df08639327e35cab8b3defe55[m
+[esc] commit 633dd8136ff9a82df08639327e35cab8b3defe55
 Author: Alu-Naofumi <joseabrahammaciastorres@gmail.com>
 Date:   Sat Mar 26 15:52:11 2022 -0500
 
      SIR-SEG V1.4.1 |COMPONENTE NUESTRO PROYECTO CREADO | aGREGADO FUNCIONALIDAD DE NAVEGACION DE BARRA DE NAVEGACION DE DIAPOSITIVAS | CONFIGURANDO ORDEN DE ANIMACIONES| --> EN PROCESO DE CONFIGURACION DE OREN DE ANIMACIONES, OPTIMIZACION DE PAGINA Y CREACION DE DEMAS COMPONENTES O DIAPOSITIVAS (PAGINAS) 26/03/2022  15:31 PM
 
-[33mcommit 5240844ac585b2084dde852d44d5c670f3363318[m
+[esc] commit 5240844ac585b2084dde852d44d5c670f3363318
 Author: Alu-Naofumi <joseabrahammaciastorres@gmail.com>
 Date:   Wed Mar 23 20:54:44 2022 -0500
 
     SIR-SEG V1.3.2 | Home Terminado| avanzando en creacion de resto de paginas |  comenzando configuracion de renderizado de cada seccion| modificacion hecha al appp y Home_Pantallas Medianas.scss | diseño de la interfaz de usuario mejorado| 23/03/2022 20:54 Pm
 
-[33mcommit 0b2b3f2c7d6b74aeb0ff3eb3052459e3f45664a0[m
+[esc] commit 0b2b3f2c7d6b74aeb0ff3eb3052459e3f45664a0
 Author: Alu-Naofumi <joseabrahammaciastorres@gmail.com>
 Date:   Mon Mar 21 14:00:17 2022 -0500
 
     SIR-SEG V1.3.1 | AVANZANDO EN CREACION DEL HOME| MODIFICACION DE Home_Pantallas medianas.scss| Adicion de carpeta de imagenes, | Adicion de loader para imagenes de diferentes formatos| configuracion del loader en webpack| Adicion de componentes Navigation, Banner, Nav Slider es decir navegacion, contenido del home Banner y la barra de navegacion lateral izquierda para pasar de slider en slider------En avanze   21/03/2022  14:00
 
-[33mcommit 24aacd5909bf782354023378fe53c66d7a4f24d1[m
+[esc] commit 24aacd5909bf782354023378fe53c66d7a4f24d1
 Author: Alu-Naofumi <joseabrahammaciastorres@gmail.com>
 Date:   Sat Mar 19 07:03:30 2022 -0500
 
     SIR-SEG V1.3.0 | gsap instalado| componentens en App Creado|Componente ErorBoundary creado | Creado Archivo Sass para pantallas tamaño mediano Home_Pantallas medianas.scss|  creando componentes para el HOme, ---Proyecnto en avanze
 
-[33mcommit 0b26bf6c369b05c48ad384bdde6d9ad735b4314e[m
+[esc] commit 0b26bf6c369b05c48ad384bdde6d9ad735b4314e
 Author: Alu-Naofumi <joseabrahammaciastorres@gmail.com>
 Date:   Fri Mar 18 14:20:37 2022 -0500
 
     SIR-SEG V1.2.0 | Construyendo archivo App.js App.scss | Intalacion e importacion de paquete @svgr/webpack | Loader @svgr/webpack agregado ala configuracion de webpack | añadido logo de SIR-SEG Logo.svg al proyecto| --trabajando eninstalacion de Gsap para animacion de componentes del home
 
-[33mcommit 8a93f7788a5b1d38be7717547f357b81fa48dc41[m
+[esc] commit 8a93f7788a5b1d38be7717547f357b81fa48dc41
 Author: Alu-Naofumi <joseabrahammaciastorres@gmail.com>
 Date:   Thu Mar 17 05:11:53 2022 -0500
 
     SIR-SEG V1.1.0 Configuracion de Mini css y Htmlwebpack plugin completa, Entorno de trabajo completo, Comenzando proyecto
 
-[33mcommit 7d7fef0ea10f32a30aadee10ce1db91871a09c89[m
+[esc] commit 7d7fef0ea10f32a30aadee10ce1db91871a09c89
 Author: Alu-Naofumi <joseabrahammaciastorres@gmail.com>
 Date:   Thu Mar 17 04:14:02 2022 -0500
 
     SIR-SEG V1.0.1 Configurando pluguins Html y MiniPluguinCss, configuracion babel , jsx, sass completa
 
-[33mcommit 2b1554f9ae774182b4cc95990614c107df6b4e85[m
+[esc] commit 2b1554f9ae774182b4cc95990614c107df6b4e85
 Author: Alu-Naofumi <joseabrahammaciastorres@gmail.com>
 Date:   Thu Mar 17 03:59:54 2022 -0500
 
