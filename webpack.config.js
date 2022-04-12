@@ -4,7 +4,10 @@ const HtmlWebpackPlugin =require('html-webpack-plugin');
 const MiniCssExtractPlugin =require('mini-css-extract-plugin');
 
 module.exports={
-    entry: "./src/index.js",
+    entry: {
+        index1: "./src/index.js",
+        index2: "./src/index2.js",
+    },
     mode: "development",
     module:{
         rules: [
@@ -45,13 +48,13 @@ module.exports={
             }
         }),
         new MiniCssExtractPlugin({
-            filename:'bundle.css'
+            filename:'[name].css'
         })
     ],
     resolve: {extensions: ["*", ".js", ".jsx"]},
     output: {
         path: path.resolve(__dirname, "build/"),
-        filename: 'bundle.js'
+        filename: '[name].js'
     },
     devServer: {
         static: {

@@ -35,6 +35,6 @@
   },
   "scripts": {
     "start": "npx webpack serve",
-    "build": "webpack --mode development"
+    "build": "npx webpack"
   }
 }
