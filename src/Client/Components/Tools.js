@@ -51,7 +51,7 @@ export default function Tools(props){
     
     
     return props.state==0?(
-        
+    <>    
         <div className="Home">
             <div className="Content1" ref={toolsRef}>
                 <div className="MainTitle">Herramientas y Gestion</div>
@@ -62,9 +62,12 @@ export default function Tools(props){
                 <img className="c-l-Banner--img container-fluid" src={Capacitacion} alt="Images of banner" />
             </div>
         </div>
+        <a style={styleBannerlink} href="#Tools/Content"  onClick={props.onHandleComponentUtility}></a>
+    </>
+             
       
     ):
-        
+    <>    
         <div className="Home">
             <div className="Content1"  ref={toolsRef}>
                 <div className="MainTitle">Herramientas y Gestion </div>
@@ -75,4 +78,19 @@ export default function Tools(props){
                 <img className="c-l-Banner--img container-fluid" src={Capacitacion} alt="Images of banner" />
             </div>
         </div>
+        <a style={styleBannerlink} href="#Tools/Content" onClick={props.onHandleComponentUtility} ></a>
+    </>
+      
+  }
+
+  const styleBannerlink ={
+    position:"absolute",
+    top:"35%",
+    right:"20%",
+    zIndex:300,
+    background:"#95B6DE",
+    width:"30%",
+    height:"35%",
+    opacity:"0",
+
   }

@@ -10,7 +10,7 @@ var tl= gsap.timeline({repeatDelay:0});
 export default  function LoadApp(props) {
     props.state==6?
     useEffect(() => {
-        tl.fromTo(loadRef.current,{opacity:1,y:500,rotation:360},{y:-60, rotation:0});
+        tl.fromTo(loadRef.current,{opacity:0,y:500,rotation:360},{opacity:1,y:-60, rotation:0});
         //tl.fromTo(loadRef.current,{opacity:1,rotation:360},{ rotation:0});
         
     }):

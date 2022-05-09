@@ -53,7 +53,7 @@ export default function Contact(props){
     
     
     return props.state==0?(
-        
+    <>
         <div className="Home" >
             <div className="Content1"ref={contactRef} >
                 <div className="MainTitle">Contact</div>
@@ -64,9 +64,10 @@ export default function Contact(props){
                 <LoadApp className="App-logo" style={CLstyleContact} img={logoReact} />
             </div>
         </div>
-      
+        <a style={styleBannerlink} href="#Contact/Content" onClick={props.onHandleComponentUtility}  ></a>
+    </>  
     ):
-        
+    <>    
         <div className="Home" >
             <div className="Content1" ref={contactRef}>
                 <div className="MainTitle">Contact </div>
@@ -74,9 +75,23 @@ export default function Contact(props){
             </div>
             <div className="c-l-Banner"  ref={bannerRef}>
                 <div className="c-l-Banner--mask"></div>
-                <LoadApp  className="App-logo" style={CLstyleContact} img={logoReact} />
+                <LoadApp  className="App-logo"  img={logoReact} />
             </div>
         </div>
+        <a style={styleBannerlink} href="#Contact/Content" onClick={props.onHandleComponentUtility} ></a>
+    </>
+  }
+
+  const styleBannerlink ={
+    position:"absolute",
+    top:"35%",
+    right:"20%",
+    zIndex:300,
+    background:"#95B6DE",
+    width:"30%",
+    height:"35%",
+    opacity:"0",
+
   }
 
   const CLstyleContact = {

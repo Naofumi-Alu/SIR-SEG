@@ -7,5 +7,4 @@ import ChatComponent from "./Components/chatComponent";
 
 
 
-
 ReactDOM.render(<ChatComponent/>,document.getElementById("AppChat"))

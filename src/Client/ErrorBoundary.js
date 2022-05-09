@@ -5,7 +5,7 @@ class ErrorBoundary extends React.Component {
     constructor(props){
         super(props);
         this.state = {stateError:false ,error : null ,errorInfo:null,state:0};
-        this.toggleState= this.toggleState.bind(this)
+        this.toggleState= this.toggleState.bind(this);
     }
    //----------- Este metedo o funciona como lo esperaba por lo tanto, no utilizo sus proiedades
    //------------Al momento de renderizar pero lo dejo escrito para checarlo mas adelante
@@ -31,12 +31,14 @@ class ErrorBoundary extends React.Component {
         }));
     
      }
-
+    
     render(){
         if (this.state.stateError) {
              // Puedes renderizar cualquier interfaz de repuesto
             return <div className='ErrorBoundary'>
                         <a className='ErrorBoundary-h1' href='#home' onClick={this.toggleState}>Something went Wrong with this component
+                        
+                        
                         </a>          
                     </div>
         }

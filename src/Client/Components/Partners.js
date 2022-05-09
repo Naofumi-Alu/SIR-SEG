@@ -51,7 +51,7 @@ export default function Partners(props){
    
     
     return props.state==0?(
-        
+    <>   
         <div className="Home" >
             <div className="Content1" ref={partnersRef}>
                 <div className="MainTitle">Convenios</div>
@@ -62,9 +62,11 @@ export default function Partners(props){
                 <img src={CiberSecurity} className="c-l-Banner--img container-fluid"  alt="Images of banner" />
             </div>
         </div>
+         <a style={styleBannerlink} href="#Partners/Content"  onClick={props.onHandleComponentUtility}></a>
+    </>
       
     ):
-        
+    <>    
         <div className="Home">
             <div className="Content1"  ref={partnersRef}>
                 <div className="MainTitle">Convenios </div>
@@ -75,4 +77,18 @@ export default function Partners(props){
                 <img src={CiberSecurity} className="c-l-Banner--img container-fluid"  alt="Images of banner" />
             </div>
         </div>
+         <a style={styleBannerlink}href="#Partners/Content" onClick={props.onHandleComponentUtility} ></a>
+    </>
+  }
+
+  const styleBannerlink ={
+    position:"absolute",
+    top:"35%",
+    right:"20%",
+    zIndex:300,
+    background:"#95B6DE",
+    width:"30%",
+    height:"35%",
+    opacity:"0",
+
   }

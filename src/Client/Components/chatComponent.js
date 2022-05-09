@@ -4,6 +4,7 @@ import "../App2.scss";
 import "../App.scss";
 import React, {useEffect,useState} from "react";
 import gsap from "gsap";
+import {hot} from "react-hot-loader";
 
 // Compoenetes de la App
 import ErrorBoundary from "../ErrorBoundary";
@@ -13,7 +14,7 @@ import RobotSvgChat from '../imagenes/RobotSvg.svg';
 var tl = gsap.timeline({ repeatDelay: 0 });
 var tl2 = gsap.timeline({ repeatDelay: 0 });
 
-export default function NavigationAppComponent (){
+function NavigationAppComponent (){
     let [state, setstate] = useState(0);
     let [state2, setstate2] = useState(0);
 
@@ -64,6 +65,7 @@ export default function NavigationAppComponent (){
     )
 }
 
+export default hot (module)(NavigationAppComponent);
 
 const styleChat = {
     height:" 100%",

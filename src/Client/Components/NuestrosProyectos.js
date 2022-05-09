@@ -60,6 +60,7 @@ export default function NuestrosProyectos(props){
     
 
     return props.state==3?(
+    <>
         <div className="Home">
             <div className="Content1">
                 <div className="MainTitle">Nuestros Proyectos</div>
@@ -70,7 +71,10 @@ export default function NuestrosProyectos(props){
                 <img className="c-l-Banner--img container-fluid" src={ImagenUniCund} alt="Images of banner" />
             </div>
         </div>
+        <a style={styleBannerlink} href="#Proyectos Desarrollo/Content" onClick={props.onHandleComponentUtility} ></a>
+    </>
     ):props.state==2&&
+    <>
         <div className="Home">
             <div className="Content1" ref={contentRef}>
                 <div className="MainTitle">Nuestros Proyectos</div>
@@ -81,7 +85,19 @@ export default function NuestrosProyectos(props){
                 <img className="c-l-Banner--img container-fluid" src={ImagenUniCund} alt="Images of banner" />
             </div>
         </div>
+         <a style={styleBannerlink} href="#Proyectos Desarrollo/Content" onClick={props.onHandleComponentUtility} ></a>
+    </>
 
   }
 
+  const styleBannerlink ={
+    position:"absolute",
+    top:"35%",
+    right:"20%",
+    zIndex:300,
+    background:"#95B6DE",
+    width:"30%",
+    height:"35%",
+    opacity:"0",
 
+  }
