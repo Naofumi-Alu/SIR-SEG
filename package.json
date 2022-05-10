@@ -47,6 +47,7 @@
     "start": "node  ./src/Server/Config/App.js",
     "dev": "nodemon --exec babel-node ./src/Server/Config/App.js",
     "webpackServe": "npx webpack serve",
+    "postinstall":"npm run build",
     "build": "npx webpack"
   }
 }
