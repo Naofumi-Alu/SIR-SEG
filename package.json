@@ -44,7 +44,7 @@
     "react-hot-loader": "^4.13.0"
   },
   "scripts": {
-    "start": "node --exec babel-node ./src/Server/Config/App.js",
+    "start": "node  ./src/Server/Config/App.js",
     "dev": "nodemon --exec babel-node ./src/Server/Config/App.js",
     "webpackServe": "npx webpack serve",
     "build": "npx webpack"
