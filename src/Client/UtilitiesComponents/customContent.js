@@ -4,7 +4,7 @@ import ImagenCapacitacion from '../imagenes/CapacitacionInfraestructuraCisco.jpg
 // IMportar logo  fondo blanco ilusttracion negra
 import Logo from '../logo.svg';
 import LogoSirSegNegro from '../logoSirSegNegro.svg';
-import './Content.scss';
+import './content.scss';
 
 // Estilos del componente
 
