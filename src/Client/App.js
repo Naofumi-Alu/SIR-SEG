@@ -131,7 +131,8 @@ function App (){
       case 6:  return <Contact onHandleComponentUtility={onHandleComponentUtility} state={state} />
 
       default:
-        return <HomeContent  state={state}/>
+        return <HomeContent  toggleComponentProyect={toggleComponentProyect} toggleComponentTopics={toggleComponentTopics}
+        toggleComponentPartners={toggleComponentPartners} state={state}/>
     }
   
   }

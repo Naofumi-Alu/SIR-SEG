@@ -7,7 +7,7 @@ const getIndex = (req, res) => {
 
 ///Investigacion-Desarrollo/Content
 const getHomeContent = (req, res) => {
- 
+    console.log('Component rendered satisfactorily');
 };
 
 

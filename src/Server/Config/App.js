@@ -20,7 +20,7 @@ app.set('views', path.join(__dirname, '../../Client'));
 app.set('view engine', 'ejs');
 //   CONFIGURACION DE PUERTOJES DE DESARROLLO 
 
-app.set("port", process.env.PORT || 3000);
+app.set("port", process.env.PORT || 5000);
 
 
 //uso de middlewares

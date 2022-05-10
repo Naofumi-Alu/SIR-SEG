@@ -40,9 +40,10 @@ useEffect(() => {
     return props.state == 11?(
        <article style={style} ref={refHomeContent}>
            <div style={stylePlease}>
-                <h3>Please, Scroll Down</h3>
            </div>
-           <CustomContentHome />
+           <CustomContentHome toggleComponentProyect={props.toggleComponentProyect}
+           toggleComponentTopics={props.toggleComponentTopics}
+           toggleComponentPartners={props.toggleComponentPartners} />
        </article >
     ):
     props.state == 12?
@@ -71,11 +72,12 @@ useEffect(() => {
     :
     props.state == 15?
         <article style={style} ref={refHomeContent}>
-            <div style={stylePlease}>
-                <h3>Please, Scroll Down</h3>
+           <div style={stylePlease}>
            </div>
-           <CustomContentPartner />
-        </article >
+           <CustomContentPartner toggleComponentProyect={props.toggleComponentProyect}
+           toggleComponentTopics={props.toggleComponentTopics}
+           toggleComponentPartners={props.toggleComponentPartners} />
+       </article >
     :
     props.state == 16&&
         <article style={style} ref={refHomeContent}>

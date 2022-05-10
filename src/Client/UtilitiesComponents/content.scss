@@ -1,161 +1,104 @@
-@media only screen and (min-width:1024px) and (max-width: 1600px){
-
-    article::-webkit-scrollbar {
-         
-            width: 0px;
-            background: transparent;
-        
-    }
-
-    
-.c-l-navAside{
-    height: 90vh;
-    width: 50%;
-    background-color: #4d4c61;
-    position: relative;
-    margin-top: 4%;
-    .c-l-navAsideGroup{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
-        padding:30%;
-        .c-u-listNavAside{
-        
-            list-style-type: none;
-          
-        }
-    }
-}
-
-$urlImages1:url('https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
-$urlImages2:url('https://fotografias.antena3.com/clipping/cmsimages01/2021/08/03/FBA37CA8-72F1-4DE1-A359-9A0EBDED7AAB/98.jpg?crop=1920,1080,x0,y99&width=1900&height=1069&optimize=low&format=webply');
-
-$urlImages3:url('https://www.purina-latam.com/sites/g/files/auxxlc391/files/purina-mascota-feliz.png');
-$urlImages4:url('https://www.ambitojuridico.com/sites/default/files/styles/imagen_800x400/public/mascota-perrito-paseofreepik.jpg.webp?itok=GJrWwScM');
-$urlImages5:url('https://www.mundomascota.net/wp-content/uploads/2016/09/Mascotas-en-el-jard%C3%ADn.jpg');
-
-$urlLogo:url('https://www.purina.com.pe/sites/default/files/logo-purina-web.png');
-$urlLogo2:url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1150px-React.svg.png');
-
-
-.colorrr{
-    background-color: #101216;
-}
-
-.c-l-SectionContent{
-    width: 80%;
-    margin: 5%;
-    display: flex;
-    flex-direction: row;
-    padding-left: 10%;
-    .c-l-SectionContent--FigureContainer{
-        width: 50%;
-        .c-l-FigureContainer--img1{
-            width: 100%;
-            height: 50vh;
-            background-image: $urlImages1;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        .c-l-FigureContainer--img2{
-            width: 100%;
-            height: 50vh;
-            background-image: $urlImages2;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        .c-l-FigureContainer--img3{
-            width: 100%;
-            height: 50vh;
-            background-image: $urlImages3;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        .c-l-FigureContainer--img4{
-            width: 100%;
-            height: 50vh;
-            background-image: $urlImages4;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        .c-l-FigureContainer--img5{
-            width: 100%;
-            height: 50vh;
-            background-image: $urlImages5;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-    }
-    .container.c-l-content{
-        width: 50%;
-        padding-left: 5%;
-        
-    }
-
-}
 
 
 footer{
- 
-    .c-l-footer{
-    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(24, 24, 26);;
+    .c-l-footer 
+    {
+        padding: 2%;
+        display: flex;
         width: 100%;
-        height: 50vh;
-        background-color: #464343;
-       
-        .c-l-footerGroup{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 100%;
-            padding: 5%;
-            .c-l-footerGroup--logo{
-                width: 20%;
-                .c-l-footerGroup--logoImg{
-                    width: 50%;
-                    height: 15vh;
-                   
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                }
-            }
-            .c-l-footerGroup--social{
-                width: 20%;
-                ul{
-                    list-style: none;
-                    li{
-                        display: inline-block;
-                        margin: 0 5%;
-                        img{
-                            width: 100%;
-                        }
-                    }
-                }
-            }
-        }
-    }
+        height: 50%;
+        justify-content: space-between;
 
-    .c-l-footerGroup--copyright{
+        .c-l-footer-contact
+        {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 50%;
+            width: 40%;
+
+            .c-l-footer-contact-item {
+                width: 50%;
+            }
+
+            h1{
+                font-size: 2rem;
+                width: 50%;
+                padding: 2%;
+                color:blanchedalmond;
+            }
+            
+            
+        }
+
+        .c-l-footer-logo
+        {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            .c-u-footer-logo--Figure{
+                justify-content: center;
+                align-items: center;
+                height: 50%;
+                width: 50%;
+                padding-bottom: 5%;
+                padding-left: 5%;
+            }
+
+        
+        }
+
+        .c-u-footer-content{
+            display: flex;
+            flex-direction: column;
+            height: 50%;
+            width: 40%;
+            justify-content: center;
+            align-items: center;
+            padding-top: 5%;
+            .c-u-footer-content--Text-Title{
+                justify-content: center;
+                font-size: 2rem;
+                width: 50%;
+                padding: 2%;
+                color: blanchedalmond;
+            } 
+            
+            .c-u-footer-content--Text-ul-List{
+                justify-content: center;
+                align-items: center;
+                font-size: 1.5rem;
+                width: 50%;
+                padding: 2%;
+                li{
+                    list-style-type: none;
+                   a{
+                    color: blanchedalmond;
+                    text-decoration: none;
+                    box-shadow: none;
+                   }
+                }
+            }
+        } 
+    }
+    .c-l-footer--CopyRight{
         display: flex;
         justify-content: center;
-        padding: 1%;
-        width: 100vw;
-        position: absolute;
-        background: #030303;
-        p{
-            font-size: 12px;
-            color: rgb(255, 255, 255);
-        }
+        align-items: center;
+        width: 100%;
+        height: 20%;
+        background-color: rgb(2, 2, 2);
+        font-size: 1.5rem;
     }
-    
-}
-
-
 }
