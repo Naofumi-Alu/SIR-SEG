@@ -485,3 +485,187 @@ ul.nav li a:hover {
     background: #ffffff;
   }
 }
+/*!**************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/Client/UtilitiesComponents/Content.scss ***!
+  \**************************************************************************************************************************************/
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 70%;
+  justify-content: center;
+  align-items: center;
+  background-color: #18181a;
+}
+footer .c-l-footer {
+  padding: 2%;
+  display: flex;
+  width: 100%;
+  height: 50%;
+  justify-content: space-between;
+}
+footer .c-l-footer .c-l-footer-contact {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 40%;
+}
+footer .c-l-footer .c-l-footer-contact .c-l-footer-contact-item {
+  width: 50%;
+}
+footer .c-l-footer .c-l-footer-contact h1 {
+  font-size: 2rem;
+  width: 50%;
+  padding: 2%;
+  color: blanchedalmond;
+}
+footer .c-l-footer .c-l-footer-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+footer .c-l-footer .c-l-footer-logo .c-u-footer-logo--Figure {
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 50%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+}
+footer .c-l-footer .c-u-footer-content {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+}
+footer .c-l-footer .c-u-footer-content .c-u-footer-content--Text-Title {
+  justify-content: center;
+  font-size: 2rem;
+  width: 50%;
+  padding: 2%;
+  color: blanchedalmond;
+}
+footer .c-l-footer .c-u-footer-content .c-u-footer-content--Text-ul-List {
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  width: 50%;
+  padding: 2%;
+}
+footer .c-l-footer .c-u-footer-content .c-u-footer-content--Text-ul-List li {
+  list-style-type: none;
+}
+footer .c-l-footer .c-u-footer-content .c-u-footer-content--Text-ul-List li a {
+  color: blanchedalmond;
+  text-decoration: none;
+  box-shadow: none;
+}
+footer .c-l-footer--CopyRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  background-color: #020202;
+  font-size: 1.5rem;
+}
+/*!**************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/Client/UtilitiesComponents/content.scss ***!
+  \**************************************************************************************************************************************/
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 70%;
+  justify-content: center;
+  align-items: center;
+  background-color: #18181a;
+}
+footer .c-l-footer {
+  padding: 2%;
+  display: flex;
+  width: 100%;
+  height: 50%;
+  justify-content: space-between;
+}
+footer .c-l-footer .c-l-footer-contact {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 40%;
+}
+footer .c-l-footer .c-l-footer-contact .c-l-footer-contact-item {
+  width: 50%;
+}
+footer .c-l-footer .c-l-footer-contact h1 {
+  font-size: 2rem;
+  width: 50%;
+  padding: 2%;
+  color: blanchedalmond;
+}
+footer .c-l-footer .c-l-footer-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+footer .c-l-footer .c-l-footer-logo .c-u-footer-logo--Figure {
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 50%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+}
+footer .c-l-footer .c-u-footer-content {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+}
+footer .c-l-footer .c-u-footer-content .c-u-footer-content--Text-Title {
+  justify-content: center;
+  font-size: 2rem;
+  width: 50%;
+  padding: 2%;
+  color: blanchedalmond;
+}
+footer .c-l-footer .c-u-footer-content .c-u-footer-content--Text-ul-List {
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  width: 50%;
+  padding: 2%;
+}
+footer .c-l-footer .c-u-footer-content .c-u-footer-content--Text-ul-List li {
+  list-style-type: none;
+}
+footer .c-l-footer .c-u-footer-content .c-u-footer-content--Text-ul-List li a {
+  color: blanchedalmond;
+  text-decoration: none;
+  box-shadow: none;
+}
+footer .c-l-footer--CopyRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  background-color: #020202;
+  font-size: 1.5rem;
+}
