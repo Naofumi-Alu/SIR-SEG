@@ -1,7 +1,9 @@
-import dbConection from "../../Config/dbConection";
+import connection from "../../Config/dbConection";
+
+
 
 const getIndex = (req, res) => {
-        
+   
    res.render('index');
 };
 
@@ -13,13 +15,19 @@ const getHomeContent = (req, res) => {
 
 ///Api-Investigacion-Desarrollo/Content
 const getApi = (req, res) => {
-    dbConection.query('SELECT * FROM HOMECONTENT',(err, result)=>{
+    
+    connection.query('SELECT * FROM HOMECONTENT',(err, result)=>{
         console.log("Query: ",result);
         console.log("Error: ",err);
         res.send(result);
        
 
     });
+
+
+    
+
+   
 }
 
 module.exports = {
