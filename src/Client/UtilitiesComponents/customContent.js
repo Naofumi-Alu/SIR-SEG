@@ -208,32 +208,8 @@ export  function CustomContentHome(props){
                                    
                                </figure>
                            </article>  
-                        {data.map(item =>
-                           
-                           item.ID == "1" ?
-                           <article style={containerFlexElements}>
-                                <div style={containerFlexElementsContent} key={item.ID}>
-                                    <h1  style={styleColorContet}>{item.title}</h1>
-                                    <p  style={styleColorContet}>{item.body}</p>
-                                </div>
-                                <figure style={containerFlexElementsFigure2}>
-                                    <LogoSirSegNegro/>
-                                </figure>
-                            </article>
-                          :
-                        item.ID == "2"&&
-                            <article style={containerFlexElements}>
-                                <figure style={containerFlexElementsFigure}>
-                                    <img style={imageSection} src={item.IMAGES} alt="" />
-                                </figure>
-                                <div style={containerFlexElementsContent} key={item.ID}>
-                                    
-                                    <h1  style={styleColorContet}>{item.title}</h1>
-                                    <p  style={styleColorContet}>{item.body}</p>
-                                </div>
-                            </article>
-                        )
-                        }
+                      
+                        
                             <article style={containerFlexElements}>
                                <div style={containerFlexElementsContent}>
                                     <h1  style={styleColorContet}>Proyectos</h1>
