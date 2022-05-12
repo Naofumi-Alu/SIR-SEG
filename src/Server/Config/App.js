@@ -16,6 +16,7 @@ const compiler = webpack(webpackConfig);
 // const server = new webpackDevServer(devServerOptions,compiler);
 
 // Settings
+//../../Client
 app.set('views', path.join(__dirname, '../../Client'));
 app.set('view engine', 'ejs');
 //   CONFIGURACION DE PUERTOJES DE DESARROLLO 

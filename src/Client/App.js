@@ -140,6 +140,20 @@ function App (){
 // metodo de montaje y desmontaje de animaciones GSAP
     useEffect(() => {
       console.log('Estado: ',state);
+      fetch("/",
+      {
+          method:'GET',
+          headers:
+              {
+              'Content-Type':'application/json'
+              },
+          mode:'cors',
+          cache:'default'
+      })
+      .then(response => response.json())
+      .catch(error => {console.error('Error:', error)})
+      .then(response => { console.log('Resultado Raiz:', response)});
+
    
       },[state]);
 

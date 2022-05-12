@@ -3,8 +3,8 @@ import connection from "../../Config/dbConection";
 
 
 const getIndex = (req, res) => {
-   
-   res.render('index');
+    
+    res.send(connection);
 };
 
 ///Investigacion-Desarrollo/Content
