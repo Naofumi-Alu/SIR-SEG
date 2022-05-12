@@ -17,7 +17,7 @@ const compiler = webpack(webpackConfig);
 
 // Settings
 //../../Client
-app.set('views', path.join(__dirname, '../../build'));
+app.set('views', path.join(__dirname, '../../Client'));
 app.set('view engine', 'ejs');
 //   CONFIGURACION DE PUERTOJES DE DESARROLLO 
 
@@ -27,7 +27,7 @@ app.set("port", process.env.PORT || 5000);
 //uso de middlewares
 app.use(morgan('dev'));
 // use server file statics in production
-app.use(express.static(path.join(__dirname, '../../build')));
+app.use(express.static(path.join(__dirname, '../../Client')));
 app.use(webpackDevMiddleware(compiler));
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
