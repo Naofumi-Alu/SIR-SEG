@@ -17,7 +17,7 @@ const compiler = webpack(webpackConfig);
 
 // Settings
 //../../Client
-app.set('views', path.join(__dirname, '../../Client/build'));
+app.set('views', path.join(__dirname, '../../build'));
 app.set('view engine', 'ejs');
 //   CONFIGURACION DE PUERTOJES DE DESARROLLO 
 
@@ -27,7 +27,7 @@ app.set("port", process.env.PORT || 5000);
 //uso de middlewares
 app.use(morgan('dev'));
 // use server file statics in production
-app.use(express.static(path.join(__dirname, '../../Client/build')));
+app.use(express.static(path.join(__dirname, '../../build')));
 app.use(webpackDevMiddleware(compiler));
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
@@ -41,7 +41,7 @@ app.use(Routes);
 const Port= app.get("port");
 app.listen(Port, () => {
     console.log(`Server is running on port ${Port}`);
-    console.log('la ruta de las vistas es:',path.join(__dirname, '../../Client/build'));
+    console.log('la ruta de las vistas es:',path.join(__dirname, '../../build'));
 });
 
 
