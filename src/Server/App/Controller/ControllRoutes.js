@@ -23,8 +23,6 @@ const getApi = (req, res) => {
        
 
     });
-
-
     
 
    

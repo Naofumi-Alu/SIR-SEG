@@ -160,7 +160,7 @@ export  function CustomContentHome(props){
                 ease: 'power3.out',
             })
            
-            fetch("http://localhost:5000/Api",
+            fetch("/Api",
             {
                 method:'GET',
                 headers:
