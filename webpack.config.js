@@ -85,7 +85,7 @@ module.exports={
     ],
     resolve: {extensions: ["*", ".js", ".jsx"]},
     output: {
-        path: path.resolve(__dirname, "build/"),
+        path: path.resolve(__dirname, "src/Client/build/"),
         filename: '[name].js'
     },
 
@@ -95,7 +95,7 @@ module.exports={
             // utiliza hot module reloading para ser mas veloz
         devServer: {
             static: {
-                directory: path.join(__dirname, "build/")
+                directory: path.join(__dirname, "src/Client/build/")
             },
             port: 5000,
             hot: true,

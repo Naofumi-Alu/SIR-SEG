@@ -1,5 +1,7 @@
-const mysql = require('mysql2');
-require('dotenv').config(); 
+//const mysql = require('mysql2');
+//require('dotenv').config(); 
+import mysql from 'mysql2';
+import 'dotenv/config';
 let connection =null;
     try {
           connection = mysql.createConnection({
